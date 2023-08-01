@@ -10,21 +10,39 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Orbitron&family=VT323&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="styles.css" />
 	</head>
-	<body>
+	<body class="bg-black text-silver">
 		<div id="navbar">
 			<nav class="container py-5 max-w-full w-screen bg-black">
-				<ul class="flex justify-evenly">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Sobre Mim</a></li>
-					<li><a href="#">Stacks</a></li>
-					<li><a href="#">Formação</a></li>
+				<ul class="flex justify-evenly font-orbitron">
+					<li><a class="animation-draw" href="#">Home</a></li>
+					<li><a class="animation-draw" href="#">Sobre Mim</a></li>
+					<li><a class="animation-draw" href="#">Stacks</a></li>
+					<li><a class="animation-draw" href="#">Formação</a></li>
 				</ul>
 			</nav>
-			<div class="border-solid border-2 border-sky-500"></div>
+			<div class="border-solid border-2 border-white"></div>
+		</div>
+		<div id="cover">
+			<div class="container max-w-full w-screen py-20">
+				<div class="flex justify-center items-center space-x-12">
+					<div class="col">
+						<h1 class="font-vt323 max-w-fit text-5xl typewriter">Olá Mundo!</h3>
+						<p>Game Dev | Mobile | Front End</p>
+					</div>
+					<div class="col">
+						<img
+							src="assets/profile.png"
+							class="h-auto w-52 rounded-full shadow-none transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-white/30"
+							alt=""
+						/>
+					</div>
+				</div>
+			</div>
 		</div>
 
-		<script src="" async defer></script>
+		<script src="script.js" async defer></script>
 	</body>
 </html>
