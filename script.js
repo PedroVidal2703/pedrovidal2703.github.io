@@ -2,7 +2,10 @@ var selectedSlide;
 
 window.onload = function () {
 	selectedSlide = "slide-1";
-	changeSlide(selectedSlide);
+	document.getElementById(selectedSlide).classList.add("selected-slide");
+	document.getElementById("aboutme-img").src = `${slides[selectedSlide].image}`;
+	document.getElementById("aboutme-text").innerHTML = `${slides[selectedSlide].text}`;
+	document.getElementById("aboutme-img").classList.add("animation-fadeinup");
 	quoteObj = getQuote();
 	document.getElementById("quote").innerHTML = `"${quoteObj.quote}"`;
 	document.getElementById("author").innerHTML = `- ${quoteObj.author}`;
@@ -19,7 +22,12 @@ function changeSlide(id) {
 	document.getElementById(id).classList.remove("animation-color");
 	selectedSlide = id;
 
-	document.getElementById("aboutme-img").src = `${slides[selectedSlide].image}`;
+	document.getElementById("aboutme-img").classList.add("animation-fadeoutdown");
+	document.getElementById("aboutme-img").addEventListener("animationend", function () {
+		document.getElementById("aboutme-img").src = `${slides[selectedSlide].image}`;
+		document.getElementById("aboutme-img").classList.remove("animation-fadeoutdown");
+		document.getElementById("aboutme-img").classList.add("animation-fadeinup");
+	});
 	document.getElementById("aboutme-text").innerHTML = `${slides[selectedSlide].text}`;
 }
 
