@@ -3,13 +3,24 @@ var selectedSlide;
 window.onload = function () {
 	selectedSlide = "slide-1";
 	document.getElementById(selectedSlide).classList.add("selected-slide");
-	document.getElementById("aboutme-img").src = `${slides[selectedSlide].image}`;
-	document.getElementById("aboutme-text").innerHTML = `${slides[selectedSlide].text}`;
-	document.getElementById("aboutme-img").classList.add("animation-fadeinup");
+	document.getElementById("projects-img").src = `${slides[selectedSlide].image}`;
+	document.getElementById("projects-text").innerHTML = `${slides[selectedSlide].text}`;
+	document.getElementById("projects-img").classList.add("animation-fadeinup");
 	quoteObj = getQuote();
 	document.getElementById("quote").innerHTML = `"${quoteObj.quote}"`;
 	document.getElementById("author").innerHTML = `- ${quoteObj.author}`;
 };
+
+window.addEventListener("scroll", scrollBehaviour);
+
+function scrollBehaviour() {
+	var y = window.scrollY;
+	if (y >= window.innerHeight / 2) {
+		document.getElementById("down-arrow").classList.add("animation-rotate");
+	} else {
+		document.getElementById("down-arrow").classList.remove("animation-rotate");
+	}
+}
 
 function getQuote() {
 	return quotes[Math.floor(Math.random() * quotes.length)];
@@ -22,13 +33,13 @@ function changeSlide(id) {
 	document.getElementById(id).classList.remove("animation-color");
 	selectedSlide = id;
 
-	document.getElementById("aboutme-img").classList.add("animation-fadeoutdown");
-	document.getElementById("aboutme-img").addEventListener("animationend", function () {
-		document.getElementById("aboutme-img").src = `${slides[selectedSlide].image}`;
-		document.getElementById("aboutme-img").classList.remove("animation-fadeoutdown");
-		document.getElementById("aboutme-img").classList.add("animation-fadeinup");
+	document.getElementById("projects-img").classList.add("animation-fadeoutdown");
+	document.getElementById("projects-img").addEventListener("animationend", function () {
+		document.getElementById("projects-img").src = `${slides[selectedSlide].image}`;
+		document.getElementById("projects-img").classList.remove("animation-fadeoutdown");
+		document.getElementById("projects-img").classList.add("animation-fadeinup");
 	});
-	document.getElementById("aboutme-text").innerHTML = `${slides[selectedSlide].text}`;
+	document.getElementById("projects-text").innerHTML = `${slides[selectedSlide].text}`;
 }
 
 var quotes = [
@@ -61,7 +72,7 @@ var quotes = [
 var slides = {
 	"slide-1": {
 		image: "assets/caraguatatuba.JPG",
-		text: "Esse é um teste do slide, bla bla bla"
+		text: "Esse é um teste do slide, bla bla bla teste bla bla bla teste bla bla bla teste bla bla bla teste bla bla bla teste bla bla bla teste bla bla bla teste bla bla bla teste bla bla bla teste"
 	},
 	"slide-2": {
 		image: "assets/placeholder2.jpeg",

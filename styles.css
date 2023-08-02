@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 .font-orbitron {
 	font-family: "Orbitron", sans-serif;
 }
@@ -26,6 +30,11 @@
 }
 
 /* Animations */
+
+.animation-rotate {
+	transform: rotate(180deg);
+	transition: transform 1s ease-out;
+}
 
 .animation-fadeinup {
 	animation-name: fade-in-up;
