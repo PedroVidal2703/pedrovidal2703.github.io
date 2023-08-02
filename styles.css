@@ -6,6 +6,10 @@
   font-family: 'VT323', monospace;
 }
 
+.font-vidaloka {
+  font-family: 'Vidaloka', serif;
+}
+
 .text-silver {
   color: #CBCBCB;
 }
@@ -41,14 +45,14 @@
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   animation: 
-    typing 3.5s steps(30, end),
+    typing 3.5s steps(50, end),
     blink-caret .75s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
-  to { width: 200% }
+  to { width: 300% }
 }
 
 /* The typewriter cursor effect */

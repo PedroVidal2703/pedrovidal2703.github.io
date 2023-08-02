@@ -9,13 +9,12 @@
 		<script src="https://cdn.tailwindcss.com"></script>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet" />
-		<link href="https://fonts.googleapis.com/css2?family=Orbitron&family=VT323&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Orbitron&family=VT323&family=Vidaloka&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body class="bg-black text-silver">
-		<div id="navbar">
-			<nav class="container py-5 max-w-full w-screen bg-black">
+		<div id="navbar" class="sticky top-0">
+			<nav class="container py-3 max-w-full w-screen bg-black sticky">
 				<ul class="flex justify-evenly font-orbitron">
 					<li><a class="animation-draw" href="#">Home</a></li>
 					<li><a class="animation-draw" href="#">Sobre Mim</a></li>
@@ -26,19 +25,50 @@
 			<div class="border-solid border-2 border-white"></div>
 		</div>
 		<div id="cover">
-			<div class="container max-w-full w-screen py-20">
-				<div class="flex justify-center items-center space-x-12">
+			<div class="container max-w-full w-screen py-10">
+				<div class="flex justify-center items-center space-x-12 py-20">
 					<div class="col">
-						<h1 class="font-vt323 max-w-fit text-5xl typewriter">Olá Mundo!</h3>
-						<p>Game Dev | Mobile | Front End</p>
+						<h1 class="font-vt323 max-w-fit text-8xl typewriter">Pedro Vidal</h1>
+						<p class="text-center text-xl">Game Dev | Mobile | Front End</p>
 					</div>
 					<div class="col">
 						<img
 							src="assets/profile.png"
-							class="h-auto w-52 rounded-full shadow-none transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-white/30"
+							class="h-auto w-60 rounded-full shadow-none transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-white/30"
 							alt=""
 						/>
 					</div>
+				</div>
+				<div id="qotd" class="flex mx-96 justify-center items-center py-16 h-16">
+					<div class="col justify-end">
+						<h1 id="quote" class="font-vidaloka text-5xl text-center"></h1>
+						<h2 id="author" class="text-right text-xl"></h2>
+					</div>
+				</div>
+				<div class="flex justify-center items-end h-60">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="w-14 h-14 mx-36"
+					>
+						<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+					</svg>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="w-14 h-14 mx-36"
+					>
+						<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+					</svg>
+				</div>
+				<div id="aboutme" class="flex py-56 justify-center">
+					<div></div>
 				</div>
 			</div>
 		</div>
