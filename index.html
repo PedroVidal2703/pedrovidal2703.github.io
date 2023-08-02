@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<title></title>
+		<title>Teste</title>
 		<meta name="description" content="" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<script src="https://cdn.tailwindcss.com"></script>
@@ -18,6 +18,7 @@
 				<ul class="flex justify-evenly font-orbitron">
 					<li><a class="animation-draw" href="#">Home</a></li>
 					<li><a class="animation-draw" href="#">Sobre Mim</a></li>
+					<li><a class="animation-draw" href="#">Projetos</a></li>
 					<li><a class="animation-draw" href="#">Stacks</a></li>
 					<li><a class="animation-draw" href="#">Formação</a></li>
 				</ul>
@@ -67,8 +68,19 @@
 						<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
 					</svg>
 				</div>
-				<div id="aboutme" class="flex py-56 justify-center">
-					<div></div>
+				<div id="aboutme" class="container max-w-full py-56">
+					<div class="flex justify-center py-10 divide-x">
+						<div class="columns-2 mx-80">
+							<img id="aboutme-img" src="" class="rounded-lg" />
+							<p id="aboutme-text"></p>
+						</div>
+					</div>
+					<div id="carousel" class="flex justify-center space-x-5">
+						<div id="slide-1" onclick="changeSlide('slide-1')" class="selected-slide slide-indicator w-5 h-5 rounded-full"></div>
+						<div id="slide-2" onclick="changeSlide('slide-2')" class="animation-color slide-indicator w-5 h-5 rounded-full"></div>
+						<div id="slide-3" onclick="changeSlide('slide-3')" class="animation-color slide-indicator w-5 h-5 rounded-full"></div>
+						<div id="slide-4" onclick="changeSlide('slide-4')" class="animation-color slide-indicator w-5 h-5 rounded-full"></div>
+					</div>
 				</div>
 			</div>
 		</div>
