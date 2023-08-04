@@ -18,6 +18,10 @@ html {
 	color: #cbcbcb;
 }
 
+.w-76 {
+	width: 19rem;
+}
+
 .slide-indicator {
 	background-color: #ffffff;
 }
@@ -31,12 +35,6 @@ html {
 
 /* Animations */
 
-.animation-rotatedown {
-	animation-name: rotate-down;
-	animation-duration: 1s;
-	animation-fill-mode: forwards;
-	animation-direction: normal;
-}
 
 .animation-rotateup {
 	animation-name: rotate-up;
@@ -45,9 +43,13 @@ html {
 	animation-direction: reverse;
 }
 
-.animation-fadeinup {
-	animation-name: fade-in-up;
-	animation-duration: 1s;
+.animation-fadein {
+	opacity: 0;
+}
+
+.animation-fadein:hover {
+	opacity: 100%;
+	transition: 0.3s
 }
 
 .animation-fadeoutdown {

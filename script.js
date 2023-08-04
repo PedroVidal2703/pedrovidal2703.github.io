@@ -1,12 +1,6 @@
-var selectedSlide;
 var pastHalf = false;
 
 window.onload = function () {
-	selectedSlide = "slide-1";
-	document.getElementById(selectedSlide).classList.add("selected-slide");
-	document.getElementById("projects-img").src = `${slides[selectedSlide].image}`;
-	document.getElementById("projects-text").innerHTML = `${slides[selectedSlide].text}`;
-	document.getElementById("projects-img").classList.add("animation-fadeinup");
 	quoteObj = getQuote();
 	document.getElementById("quote").innerHTML = `"${quoteObj.quote}"`;
 	document.getElementById("author").innerHTML = `- ${quoteObj.author}`;
@@ -19,34 +13,16 @@ window.onscroll = function () {
 		pastHalf = true;
 		downArrow.classList.add("animation-rotatedown");
 		downArrow.classList.remove("animation-rotateup");
-		console.log("Past Half");
 	}
 	if (y <= window.innerHeight / 2.5 && pastHalf) {
 		pastHalf = false;
 		downArrow.classList.add("animation-rotateup");
 		downArrow.classList.remove("animation-rotatedown");
-		console.log("Before Half");
 	}
 };
 
 function getQuote() {
 	return quotes[Math.floor(Math.random() * quotes.length)];
-}
-
-function changeSlide(id) {
-	document.getElementById(selectedSlide).classList.add("animation-color");
-	document.getElementById(selectedSlide).classList.remove("selected-slide");
-	document.getElementById(id).classList.add("selected-slide");
-	document.getElementById(id).classList.remove("animation-color");
-	selectedSlide = id;
-
-	document.getElementById("projects-img").classList.add("animation-fadeoutdown");
-	document.getElementById("projects-img").addEventListener("animationend", function () {
-		document.getElementById("projects-img").src = `${slides[selectedSlide].image}`;
-		document.getElementById("projects-img").classList.remove("animation-fadeoutdown");
-		document.getElementById("projects-img").classList.add("animation-fadeinup");
-	});
-	document.getElementById("projects-text").innerHTML = `${slides[selectedSlide].text}`;
 }
 
 var quotes = [
@@ -75,22 +51,3 @@ var quotes = [
 		quote: "Tudo que ouvimos é uma opinião, não um fato. Tudo que vemos é uma perspectiva, não a verdade."
 	}
 ];
-
-var slides = {
-	"slide-1": {
-		image: "assets/caraguatatuba.JPG",
-		text: "Esse é um teste do slide, bla bla bla teste bla bla bla teste bla bla bla teste bla bla bla teste bla bla bla teste bla bla bla teste bla bla bla teste bla bla bla teste bla bla bla teste"
-	},
-	"slide-2": {
-		image: "assets/placeholder2.jpeg",
-		text: "Esse já é o segundo slide, tá funcionando até bem né?"
-	},
-	"slide-3": {
-		image: "",
-		text: "Esse vai ser o terceiro slide."
-	},
-	"slide-4": {
-		image: "",
-		text: "Quarto slide, testando, deu certo?"
-	}
-};
