@@ -1,4 +1,5 @@
 var selectedSlide;
+var pastHalf = false;
 
 window.onload = function () {
 	selectedSlide = "slide-1";
@@ -11,16 +12,22 @@ window.onload = function () {
 	document.getElementById("author").innerHTML = `- ${quoteObj.author}`;
 };
 
-window.addEventListener("scroll", scrollBehaviour);
-
-function scrollBehaviour() {
+window.onscroll = function () {
 	var y = window.scrollY;
-	if (y >= window.innerHeight / 2) {
-		document.getElementById("down-arrow").classList.add("animation-rotate");
-	} else {
-		document.getElementById("down-arrow").classList.remove("animation-rotate");
+	var downArrow = document.getElementById("down-arrow");
+	if (y >= window.innerHeight / 2.5 && !pastHalf) {
+		pastHalf = true;
+		downArrow.classList.add("animation-rotatedown");
+		downArrow.classList.remove("animation-rotateup");
+		console.log("Past Half");
 	}
-}
+	if (y <= window.innerHeight / 2.5 && pastHalf) {
+		pastHalf = false;
+		downArrow.classList.add("animation-rotateup");
+		downArrow.classList.remove("animation-rotatedown");
+		console.log("Before Half");
+	}
+};
 
 function getQuote() {
 	return quotes[Math.floor(Math.random() * quotes.length)];

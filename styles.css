@@ -31,9 +31,18 @@ html {
 
 /* Animations */
 
-.animation-rotate {
-	transform: rotate(180deg);
-	transition: transform 1s ease-out;
+.animation-rotatedown {
+	animation-name: rotate-down;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-direction: normal;
+}
+
+.animation-rotateup {
+	animation-name: rotate-up;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-direction: reverse;
 }
 
 .animation-fadeinup {
@@ -130,5 +139,21 @@ html {
 	}
 	50% {
 		border-color: #cbcbcb;
+	}
+}
+
+@keyframes rotate-down {
+	from {
+	}
+	to {
+		transform: rotate(180deg);
+	}
+}
+
+@keyframes rotate-up {
+	from {
+	}
+	to {
+		transform: rotate(-180deg);
 	}
 }
