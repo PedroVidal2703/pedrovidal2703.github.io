@@ -33,6 +33,14 @@ html {
 	border-color: #ffffff;
 }
 
+.card {
+	background-color: #FFFFFF;
+}
+
+.card-context {
+	background-color: #FF0000;
+}
+
 /* Animations */
 
 
@@ -41,6 +49,13 @@ html {
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 	animation-direction: reverse;
+}
+
+.animation-rotatedown {
+	animation-name: rotate-down;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-direction: normal;
 }
 
 .animation-fadein {
