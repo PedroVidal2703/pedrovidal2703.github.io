@@ -34,15 +34,30 @@ html {
 }
 
 .card {
-	background-color: #FFFFFF;
+	background-color: #ffffff;
 }
 
 .card-context {
-	background-color: #FF0000;
+	background-color: #000000;
+}
+
+#saeg-proj {
+	background-image: url("assets/saeg.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 15em;
+	background-color: #FFFFFF
+}
+
+#ssad-proj {
+	background-image: url("assets/156.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 15em;
+	background-color: #FFFFFF
 }
 
 /* Animations */
-
 
 .animation-rotateup {
 	animation-name: rotate-up;
@@ -64,7 +79,7 @@ html {
 
 .animation-fadein:hover {
 	opacity: 100%;
-	transition: 0.3s
+	transition: 0.3s;
 }
 
 .animation-fadeoutdown {
