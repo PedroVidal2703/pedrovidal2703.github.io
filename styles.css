@@ -54,7 +54,15 @@ html {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 15em;
-	background-color: #FFFFFF
+	background-color: #1dcbf2
+}
+
+#inova-proj {
+	background-image: url("assets/inova.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 15em;
+	background-color: #65a603
 }
 
 /* Animations */
