@@ -65,6 +65,14 @@ html {
 	background-color: #65a603
 }
 
+#devu-proj {
+	background-image: url("assets/devu.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 15em;
+	background-color: #000000
+}
+
 /* Animations */
 
 .animation-rotateup {
