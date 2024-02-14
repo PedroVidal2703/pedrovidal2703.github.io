@@ -51,3 +51,24 @@ var quotes = [
 		quote: "Tudo que ouvimos é uma opinião, não um fato. Tudo que vemos é uma perspectiva, não a verdade."
 	}
 ];
+
+let currentIndex = 0;
+const carousel = document.querySelector(".carousel");
+const carouselItems = document.querySelectorAll(".carousel-item");
+const numItems = carouselItems.length;
+
+function showItem(index) {
+	if (index < 0 || index >= numItems) return;
+	carousel.style.transform = `translateX(-${index * 100}%)`;
+	currentIndex = index;
+}
+
+function nextSlide() {
+	currentIndex = (currentIndex + 1) % numItems;
+	showItem(currentIndex);
+}
+
+function prevSlide() {
+	currentIndex = (currentIndex - 1 + numItems) % numItems;
+	showItem(currentIndex);
+}

@@ -49,25 +49,37 @@
 					<h1 class="text-center font-orbitron text-4xl">__ Stacks __</h1>
 					<div class="flex bg-white justify-center py-10 mt-5 divide-x">
 						<div class="flex flex-col md:flex-row items-center gap-12 py-8">
-							<a target=”_blank” href="https://www.python.org/"
-								><img class="w-36" src="https://img.shields.io/badge/-Python-FFFFFF?labelColor=000000&logoColor=FFFFFF&style=for-the-badge&logo=python"
+							<a target="”_blank”" href="https://www.python.org/"
+								><img
+									class="w-36"
+									src="https://img.shields.io/badge/-Python-FFFFFF?labelColor=000000&logoColor=FFFFFF&style=for-the-badge&logo=python"
 							/></a>
-							<a target=”_blank” href="https://angular.io/"
-								><img class="w-36" src="https://img.shields.io/badge/-Angular-FFFFFF?labelColor=000000&logoColor=FFFFFF&style=for-the-badge&logo=angular"
+							<a target="”_blank”" href="https://angular.io/"
+								><img
+									class="w-36"
+									src="https://img.shields.io/badge/-Angular-FFFFFF?labelColor=000000&logoColor=FFFFFF&style=for-the-badge&logo=angular"
 							/></a>
-							<a target=”_blank” href="https://wordpress.com/"
-								><img class="w-44" src="https://img.shields.io/badge/-Wordpress-FFFFFF?labelColor=000000&logoColor=FFFFFF&style=for-the-badge&logo=wordpress"
+							<a target="”_blank”" href="https://wordpress.com/"
+								><img
+									class="w-44"
+									src="https://img.shields.io/badge/-Wordpress-FFFFFF?labelColor=000000&logoColor=FFFFFF&style=for-the-badge&logo=wordpress"
 							/></a>
-							<a target=”_blank” href="https://flutter.dev/"
-								><img class="w-36" src="https://img.shields.io/badge/-Flutter-FFFFFF?labelColor=000000&logoColor=FFFFFF&style=for-the-badge&logo=flutter"
+							<a target="”_blank”" href="https://flutter.dev/"
+								><img
+									class="w-36"
+									src="https://img.shields.io/badge/-Flutter-FFFFFF?labelColor=000000&logoColor=FFFFFF&style=for-the-badge&logo=flutter"
 							/></a>
-							<a target=”_blank” href="https://reactjs.org/"
-								><img class="w-32" src="https://img.shields.io/badge/-React-FFFFFF?labelColor=000000&logoColor=FFFFFF&style=for-the-badge&logo=react"
+							<a target="”_blank”" href="https://reactjs.org/"
+								><img
+									class="w-32"
+									src="https://img.shields.io/badge/-React-FFFFFF?labelColor=000000&logoColor=FFFFFF&style=for-the-badge&logo=react"
 							/></a>
-							<a target=”_blank” href="https://github.com/torvalds/linux"
-								><img class="w-32" src="https://img.shields.io/badge/-Linux-FFFFFF?labelColor=000000&logoColor=FFFFFF&style=for-the-badge&logo=linux"
+							<a target="”_blank”" href="https://github.com/torvalds/linux"
+								><img
+									class="w-32"
+									src="https://img.shields.io/badge/-Linux-FFFFFF?labelColor=000000&logoColor=FFFFFF&style=for-the-badge&logo=linux"
 							/></a>
-							<a target=”_blank” href="https://godotengine.org/"
+							<a target="”_blank”" href="https://godotengine.org/"
 								><img
 									class="w-52"
 									src="https://img.shields.io/badge/-Godot Engine-FFFFFF?labelColor=000000&logoColor=FFFFFF&style=for-the-badge&logo=godotengine"
@@ -77,28 +89,27 @@
 				</div>
 				<div id="projects" class="container max-w-full py-24">
 					<h1 class="text-center font-orbitron text-4xl">___ Projetos ___</h1>
-					<div class="flex justify-center py-10 divide-x">
-						<div class="flex flex-col xl:flex-row gap-12">
-							<a
-								href="https://play.google.com/store/apps/details?id=com.jaasolucoes.ssadCaragua&hl=pt_BR&gl=US"
-								target="_blank"
-								id="ssad-proj"
-								class="card rounded-lg flex w-64 h-72 my-6 items-end"
-							></a>
-							<a
-								href="https://play.google.com/store/apps/details?id=com.guaratingueta.saeg&pli=1"
-								target="_blank"
-								id="saeg-proj"
-								class="card rounded-lg flex w-64 h-72 my-6 items-end"
-							></a>
-							<a href="https://inovajr.com.br/" target="_blank" id="inova-proj" class="card rounded-lg flex w-64 h-72 my-6 items-end"></a>
-							<a
-								href="https://dev-unifei.github.io/"
-								target="_blank"
-								id="devu-proj"
-								class="card rounded-lg flex w-64 h-72 my-6 items-end"
-							></a>
+					<div class="carousel-container w-[80%] rounded-md">
+						<div class="carousel">
+							<div class="carousel-item border-dashed">
+								<div class="columns-2">
+									<img class="max-h-[750px]" src="assets/caragua-project.png" />
+									<div class="h-full w-full"></div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img class="max-h-[750px]" src="assets/saeg-project.png" />
+							</div>
+							<div class="carousel-item">
+								<img class="max-h-[500px]" src="assets/caragua-project.png" />
+							</div>
 						</div>
+					</div>
+					<div class="flex justify-center mt-4">
+						<button onclick="prevSlide()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mx-2 rounded">
+							Previous
+						</button>
+						<button onclick="nextSlide()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mx-2 rounded">Next</button>
 					</div>
 				</div>
 			</div>

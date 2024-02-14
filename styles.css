@@ -26,6 +26,25 @@ html {
 	background-color: #ffffff;
 }
 
+.overlay {
+	background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+}
+
+.carousel-container {
+	margin: auto;
+	overflow: hidden;
+}
+
+.carousel {
+	display: flex;
+	transition: transform 0.5s ease;
+}
+
+.carousel-item {
+	flex: 0 0 auto;
+	width: 100%;
+}
+
 .selected-slide {
 	background-color: #000000;
 	border-style: solid;
@@ -46,7 +65,7 @@ html {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 15em;
-	background-color: #FFFFFF
+	background-color: #ffffff;
 }
 
 #ssad-proj {
@@ -54,7 +73,7 @@ html {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 15em;
-	background-color: #1dcbf2
+	background-color: #1dcbf2;
 }
 
 #inova-proj {
@@ -62,7 +81,7 @@ html {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 15em;
-	background-color: #65a603
+	background-color: #65a603;
 }
 
 #devu-proj {
@@ -70,7 +89,7 @@ html {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 15em;
-	background-color: #000000
+	background-color: #000000;
 }
 
 /* Animations */
