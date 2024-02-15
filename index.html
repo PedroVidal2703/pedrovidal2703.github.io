@@ -93,8 +93,8 @@
 						<div class="carousel">
 							<div class="carousel-item">
 								<div class="grid grid-rows-1 grid-flow-col gap-0">
-									<img class="max-h-[58vw] p-0 m-0 rounded" src="assets/caragua-project.png" />
-									<div class="max-h-[750px] w-[58vw] p-0 m-0 ml-1 border-b-2 border-t-2 border-r-2 border-dashed rounded">
+									<img class="max-h-[25vw] p-0 m-0 rounded" src="assets/caragua-project.png" />
+									<div class="max-h-[25vw] p-0 m-0 ml-1 border-b-2 border-t-2 border-r-2 border-dashed rounded">
 										<h2 class="text-center text-5xl my-8">Caraguá 156</h2>
 										<p class="mx-8">
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fermentum laoreet velit. Praesent dapibus purus non
@@ -112,8 +112,8 @@
 							</div>
 							<div class="carousel-item">
 								<div class="grid grid-rows-1 grid-flow-col gap-0">
-									<img class="max-h-[58vw] p-0 m-0 rounded" src="assets/saeg-project.png" />
-									<div class="max-h-[750px] w-[58vw] p-0 m-0 ml-1 border-b-2 border-t-2 border-r-2 border-dashed rounded">
+									<img class="max-h-[25vw] p-0 m-0 rounded" src="assets/saeg-project.png" />
+									<div class="max-h-[25vw] p-0 m-0 ml-1 border-b-2 border-t-2 border-r-2 border-dashed rounded">
 										<h2 class="text-center text-5xl my-8">SAEG 156</h2>
 										<p class="mx-8">
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fermentum laoreet velit. Praesent dapibus purus non
@@ -130,17 +130,15 @@
 								</div>
 							</div>
 						</div>
+
 						<div class="flex justify-center flex-row gap-2 mt-2">
-							<div class="w-5 h-5 m-0 border-2 rounded-full"></div>
-							<div class="w-5 h-5 m-0 border-2 rounded-full"></div>
-							<div class="w-5 h-5 m-0 border-2 rounded-full"></div>
+							<div class="slide-indicator w-5 h-5 m-0 border-2 rounded-full"></div>
+							<div class="slide-indicator w-5 h-5 m-0 border-2 rounded-full"></div>
 						</div>
 					</div>
-					<div class="flex justify-center mt-4">
-						<button onclick="prevSlide()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mx-2 rounded">
-							Previous
-						</button>
-						<button onclick="nextSlide()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mx-2 rounded">Next</button>
+					<div class="absolute flex w-full justify-between transform translate-y-[-17vw]">
+						<button onclick="prevSlide()" class="text-white h-full text-5xl font-orbitron font-bold px-4 mx-2 rounded">&lt;</button>
+						<button onclick="nextSlide()" class="text-white h-full text-5xl font-orbitron font-bold px-4 mx-2 rounded">&gt;</button>
 					</div>
 				</div>
 			</div>

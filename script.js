@@ -55,7 +55,9 @@ var quotes = [
 let currentIndex = 0;
 const carousel = document.querySelector(".carousel");
 const carouselItems = document.querySelectorAll(".carousel-item");
+const slideIndicators = document.querySelectorAll(".slide-indicator");
 const numItems = carouselItems.length;
+slideIndicators[currentIndex].style.backgroundColor = `#FFFFFF`
 
 function showItem(index) {
 	if (index < 0 || index >= numItems) return;
@@ -64,11 +66,15 @@ function showItem(index) {
 }
 
 function nextSlide() {
+	slideIndicators[currentIndex].style.backgroundColor = null
 	currentIndex = (currentIndex + 1) % numItems;
+	slideIndicators[currentIndex].style.backgroundColor = `#FFFFFF`
 	showItem(currentIndex);
 }
 
 function prevSlide() {
+	slideIndicators[currentIndex].style.backgroundColor = null
 	currentIndex = (currentIndex - 1 + numItems) % numItems;
+	slideIndicators[currentIndex].style.backgroundColor = `#FFFFFF`
 	showItem(currentIndex);
 }
