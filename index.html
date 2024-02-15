@@ -89,7 +89,30 @@
 				</div>
 				<div id="projects" class="container max-w-full py-24">
 					<h1 class="text-center font-orbitron text-4xl">___ Projetos ___</h1>
-					<div class="carousel-container w-[80%] mt-5">
+					<div class="min-[1330px]:hidden flex justify-center py-10 divide-x">
+						<div class="flex flex-col xl:flex-row gap-12">
+							<a
+								href="https://play.google.com/store/apps/details?id=com.jaasolucoes.ssadCaragua&hl=pt_BR&gl=US"
+								target="_blank"
+								id="ssad-proj"
+								class="card rounded-lg flex w-64 h-72 my-6 items-end"
+							></a>
+							<a
+								href="https://play.google.com/store/apps/details?id=com.guaratingueta.saeg&pli=1"
+								target="_blank"
+								id="saeg-proj"
+								class="card rounded-lg flex w-64 h-72 my-6 items-end"
+							></a>
+							<a href="https://inovajr.com.br/" target="_blank" id="inova-proj" class="card rounded-lg flex w-64 h-72 my-6 items-end"></a>
+							<a
+								href="https://dev-unifei.github.io/"
+								target="_blank"
+								id="devu-proj"
+								class="card rounded-lg flex w-64 h-72 my-6 items-end"
+							></a>
+						</div>
+					</div>
+					<div class="hidden min-[1330px]:block carousel-container w-[80%] mt-5">
 						<div class="carousel">
 							<div class="carousel-item">
 								<div class="grid grid-rows-1 grid-flow-col gap-0">
@@ -136,7 +159,7 @@
 							<div class="slide-indicator w-5 h-5 m-0 border-2 rounded-full"></div>
 						</div>
 					</div>
-					<div class="absolute flex w-full justify-between transform translate-y-[-17vw]">
+					<div class="hidden absolute min-[1330px]:flex w-full justify-between transform translate-y-[-17vw]">
 						<button onclick="prevSlide()" class="text-white h-full text-5xl font-orbitron font-bold px-4 mx-2 rounded">&lt;</button>
 						<button onclick="nextSlide()" class="text-white h-full text-5xl font-orbitron font-bold px-4 mx-2 rounded">&gt;</button>
 					</div>
