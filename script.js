@@ -61,6 +61,9 @@ slideIndicators[currentIndex].style.backgroundColor = `#FFFFFF`
 
 function showItem(index) {
 	if (index < 0 || index >= numItems) return;
+	slideIndicators[currentIndex].style.backgroundColor = null
+	currentIndex = index;
+	slideIndicators[currentIndex].style.backgroundColor = `#FFFFFF`
 	carousel.style.transform = `translateX(-${index * 100}%)`;
 	currentIndex = index;
 }
