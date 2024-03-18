@@ -25,22 +25,22 @@
 		</div>
 		<div id="cover">
 			<div class="container max-w-full w-screen">
-				<div class="flex xl:mb-0 mb-20 justify-center items-center space-x-12 mt-[10vh]">
-					<div class="col">
-						<h1 class="font-vt323 max-w-fit text-8xl typewriter">Pedro Vidal</h1>
-						<p class="text-center text-xl">Mobile | Front End | Game Dev</p>
-					</div>
-					<div class="col">
+				<div class="flex xl:mb-0 mb-30 justify-center items-center space-x-12 mt-[10vh]">
+					<div class="flex flex-col lg:flex-row w-screen lg:justify-center items-center">
 						<img
 							src="assets/profile.png"
-							class="h-auto w-60 rounded-full shadow-none transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-white/30"
+							class="h-auto lg:w-[18vw] w-[25vw] rounded-full shadow-none transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-white/30 mb-20"
 							alt=""
 						/>
+						<div class="flex flex-col items-center justify-center">
+							<h1 id="name" class="font-vt323 max-w-fit text-7xl typewriter"></h1>
+							<p class="text-center px-28 text-lg">Mobile | Front End | Game Dev</p>
+						</div>
 					</div>
 				</div>
-				<div id="qotd" class="flex mx-24 justify-center items-center py-12 h-16 mt-[15vh]">
+				<div id="qotd" class="flex mx-24 justify-center items-center pb-40 h-16 mt-[15vh]">
 					<div class="col justify-end">
-						<h1 id="quote" class="font-vidaloka text-4xl text-center"></h1>
+						<h1 id="quote" class="font-vidaloka text-3xl text-center"></h1>
 						<h2 id="author" class="text-right text-xl"></h2>
 					</div>
 				</div>
@@ -133,7 +133,7 @@
 								</div>
 							</div>
 							<div class="carousel-item">
-								<div class="grid grid-rows-1 grid-flow-col gap-0">
+								<div class="grid relative grid-rows-1 grid-flow-col gap-0">
 									<div class="h-[30vw] w-[19vw] absolute bg-gradient-to-r from-transparent from-40% to-white to-90%"></div>
 									<img class="max-h-[30vw] p-0 m-0" src="assets/saeg-project.png" />
 									<div class="max-h-[30vw] w-[62vw] m-0 ml-1 rounded">
@@ -152,7 +152,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="flex justify-center flex-row gap-2 mt-2">
+					<div class="hidden min-[1330px]:flex justify-center flex-row gap-2 mt-2">
 						<div onclick="showItem(0)" class="inline slide-indicator w-5 h-5 m-0 border-2 rounded-full"></div>
 						<div onclick="showItem(1)" class="inline slide-indicator w-5 h-5 m-0 border-2 rounded-full"></div>
 					</div>

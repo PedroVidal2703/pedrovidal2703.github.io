@@ -1,4 +1,7 @@
 var pastHalf = false;
+let i = 0;
+const text = "Pedro Vidal";
+const speed = 150;
 
 window.onload = function () {
 	quoteObj = getQuote();
@@ -20,6 +23,16 @@ window.onscroll = function () {
 		downArrow.classList.remove("animation-rotatedown");
 	}
 };
+
+function typeWriter() {
+	if (i < text.length) {
+		document.getElementById("name").innerHTML += text.charAt(i);
+		i++;
+		setTimeout(typeWriter, speed);
+	}
+}
+
+typeWriter();
 
 function getQuote() {
 	return quotes[Math.floor(Math.random() * quotes.length)];
@@ -57,27 +70,27 @@ const carousel = document.querySelector(".carousel");
 const carouselItems = document.querySelectorAll(".carousel-item");
 const slideIndicators = document.querySelectorAll(".slide-indicator");
 const numItems = carouselItems.length;
-slideIndicators[currentIndex].style.backgroundColor = `#FFFFFF`
+slideIndicators[currentIndex].style.backgroundColor = `#FFFFFF`;
 
 function showItem(index) {
 	if (index < 0 || index >= numItems) return;
-	slideIndicators[currentIndex].style.backgroundColor = null
+	slideIndicators[currentIndex].style.backgroundColor = null;
 	currentIndex = index;
-	slideIndicators[currentIndex].style.backgroundColor = `#FFFFFF`
+	slideIndicators[currentIndex].style.backgroundColor = `#FFFFFF`;
 	carousel.style.transform = `translateX(-${index * 100}%)`;
 	currentIndex = index;
 }
 
 function nextSlide() {
-	slideIndicators[currentIndex].style.backgroundColor = null
+	slideIndicators[currentIndex].style.backgroundColor = null;
 	currentIndex = (currentIndex + 1) % numItems;
-	slideIndicators[currentIndex].style.backgroundColor = `#FFFFFF`
+	slideIndicators[currentIndex].style.backgroundColor = `#FFFFFF`;
 	showItem(currentIndex);
 }
 
 function prevSlide() {
-	slideIndicators[currentIndex].style.backgroundColor = null
+	slideIndicators[currentIndex].style.backgroundColor = null;
 	currentIndex = (currentIndex - 1 + numItems) % numItems;
-	slideIndicators[currentIndex].style.backgroundColor = `#FFFFFF`
+	slideIndicators[currentIndex].style.backgroundColor = `#FFFFFF`;
 	showItem(currentIndex);
 }

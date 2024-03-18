@@ -2,6 +2,10 @@ html {
 	scroll-behavior: smooth;
 }
 
+@media only screen and (min-width: 1030px) {
+	
+}
+
 .font-orbitron {
 	font-family: "Orbitron", sans-serif;
 }
@@ -37,8 +41,8 @@ html {
 }
 
 .grid-cols-2 > * {
-    width: 50%;
-    flex-grow: 1;
+	width: 50%;
+	flex-grow: 1;
 }
 
 .carousel-item {
@@ -162,8 +166,7 @@ html {
 	overflow: hidden; /* Ensures the content is not revealed until the animation */
 	border-right: 0.1em solid #cbcbcb; /* The typwriter cursor */
 	white-space: nowrap; /* Keeps the content on a single line */
-	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-	animation: typing 3.5s steps(50, end), blink-caret 0.75s step-end infinite;
+	animation: blink-caret 0.75s step-end infinite;
 }
 
 /* The typing effect */
