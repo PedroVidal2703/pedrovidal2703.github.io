@@ -47,49 +47,21 @@
 				<div id="stacks"></div>
 				<div class="container max-w-full pt-15 mt-16">
 					<h1 class="text-center font-orbitron text-4xl">__ Stacks __</h1>
-					<div class="flex bg-white justify-center py-10 mt-5 divide-x">
-						<div class="flex flex-col md:flex-row items-center gap-12 py-8">
-							<a target="”_blank”" href="https://www.python.org/"
-								><img
-									class="w-36"
-									src="https://img.shields.io/badge/-Python-FFFFFF?labelColor=000000&logoColor=FFFFFF&style=for-the-badge&logo=python"
-							/></a>
-							<a target="”_blank”" href="https://angular.io/"
-								><img
-									class="w-36"
-									src="https://img.shields.io/badge/-Angular-FFFFFF?labelColor=000000&logoColor=FFFFFF&style=for-the-badge&logo=angular"
-							/></a>
-							<a target="”_blank”" href="https://wordpress.com/"
-								><img
-									class="w-44"
-									src="https://img.shields.io/badge/-Wordpress-FFFFFF?labelColor=000000&logoColor=FFFFFF&style=for-the-badge&logo=wordpress"
-							/></a>
-							<a target="”_blank”" href="https://flutter.dev/"
-								><img
-									class="w-36"
-									src="https://img.shields.io/badge/-Flutter-FFFFFF?labelColor=000000&logoColor=FFFFFF&style=for-the-badge&logo=flutter"
-							/></a>
-							<a target="”_blank”" href="https://reactjs.org/"
-								><img
-									class="w-32"
-									src="https://img.shields.io/badge/-React-FFFFFF?labelColor=000000&logoColor=FFFFFF&style=for-the-badge&logo=react"
-							/></a>
-							<a target="”_blank”" href="https://github.com/torvalds/linux"
-								><img
-									class="w-32"
-									src="https://img.shields.io/badge/-Linux-FFFFFF?labelColor=000000&logoColor=FFFFFF&style=for-the-badge&logo=linux"
-							/></a>
-							<a target="”_blank”" href="https://godotengine.org/"
-								><img
-									class="w-52"
-									src="https://img.shields.io/badge/-Godot Engine-FFFFFF?labelColor=000000&logoColor=FFFFFF&style=for-the-badge&logo=godotengine"
-							/></a>
+					<div class="hidden xl:flex bg-white justify-center py-10 mt-5 divide-x">
+						<div class="flex flex-row items-center gap-12 py-8">
+							<a target="”_blank”" href="https://www.python.org/"><img class="w-36" src="assets/badges/PYTHON.svg" /></a>
+							<a target="”_blank”" href="https://angular.io/"><img class="w-36" src="assets/badges/ANGULAR.svg" /></a>
+							<a target="”_blank”" href="https://wordpress.com/"><img class="w-44" src="assets/badges/WORDPRESS.svg" /></a>
+							<a target="”_blank”" href="https://flutter.dev/"><img class="w-36" src="assets/badges/FLUTTER.svg" /></a>
+							<a target="”_blank”" href="https://reactjs.org/"><img class="w-32" src="assets/badges/REACT.svg" /></a>
+							<a target="”_blank”" href="https://github.com/torvalds/linux"><img class="w-32" src="assets/badges/LINUX.svg" /></a>
+							<a target="”_blank”" href="https://godotengine.org/"><img class="w-32" src="assets/badges/GODOT.svg" /></a>
 						</div>
 					</div>
 				</div>
 				<div id="projects" class="container max-w-full py-24">
 					<h1 class="text-center font-orbitron text-4xl">___ Projetos ___</h1>
-					<div class="min-[1330px]:hidden flex justify-center py-10 divide-x">
+					<div class="xl:hidden flex justify-center py-10 divide-x">
 						<div class="flex flex-col xl:flex-row gap-12">
 							<a
 								href="https://play.google.com/store/apps/details?id=com.jaasolucoes.ssadCaragua&hl=pt_BR&gl=US"
@@ -112,7 +84,7 @@
 							></a>
 						</div>
 					</div>
-					<div class="hidden min-[1330px]:block carousel-container w-full bg-white text-black mt-5">
+					<div class="hidden xl:block carousel-container w-full bg-white text-black mt-5">
 						<div class="carousel">
 							<div class="carousel-item">
 								<div class="grid grid-rows-1 grid-flow-col gap-0">
@@ -152,11 +124,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="hidden min-[1330px]:flex justify-center flex-row gap-2 mt-2">
+					<div class="hidden xl:flex justify-center flex-row gap-2 mt-2">
 						<div onclick="showItem(0)" class="inline slide-indicator w-5 h-5 m-0 border-2 rounded-full"></div>
 						<div onclick="showItem(1)" class="inline slide-indicator w-5 h-5 m-0 border-2 rounded-full"></div>
 					</div>
-					<div class="hidden absolute min-[1330px]:flex flex-row-reverse w-full justify-between transform translate-y-[-17vw]">
+					<div class="hidden absolute xl:flex flex-row-reverse w-full justify-between transform translate-y-[-17vw]">
 						<button onclick="nextSlide()" class="text-black h-full text-5xl font-orbitron font-bold px-4 mx-2 rounded">&gt;</button>
 					</div>
 				</div>
